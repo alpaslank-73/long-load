@@ -15,7 +15,7 @@ spec:
         app: long-load
     spec:
       containers:
-      - image: registry.ocp4.example.com:8443/redhattraining/long-load:v1
+      - image: quay.io/alpaslank/long-load:v1
         imagePullPolicy: Always
         name: long-load
         env:
