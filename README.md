@@ -61,7 +61,7 @@ Ok
 
 *** Liveness probe ekliyoruz:
 
-$ oc set probe deploy/long-load --liveness --get-url=http://:3000/health --period-seconds=3 --failure-threshold=30
+$ oc set probe deploy/long-load --liveness --get-url=http://:3000/health --period-seconds=3 --failure-threshold=15
 
 *** Pod'larin hizli update olmasi icin (aksi taktirde her birinin teker teker ready olmasi uzun 30'ar saniye surdugu icin uzun surer):
 
